@@ -4,19 +4,20 @@ public class FizzBuzz {
 
 	public static void main(String[] args) {
 		FizzBuzz f = new FizzBuzz();
-		f.solution();
+		String num = "";
+		System.out.println(f.solution(num));
 	}
 
-	public String solution() {
+	public String solution(String a) {
 		for (int i = 1; i <= 100; i++)
 			if (i % 3 == 0 && i % 5 == 0)
-				System.out.println("FizzBuzz");
+				a+="FizzBuzz\n";
 			else if (i % 3 == 0)
-				System.out.println("Fizz");
+				a+="Fizz\n";
 			else if (i % 5 == 0)
-				System.out.println("Buzz");
+				a+="Buzz\n";
 			else
-				System.out.println(i);
-		return "\n";
+				a+=i +  "\n";
+		return a;
 	}
 }
