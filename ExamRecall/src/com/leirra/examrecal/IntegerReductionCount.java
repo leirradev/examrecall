@@ -4,7 +4,7 @@ public class IntegerReductionCount {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		IntegerReduceCount count = new IntegerReduceCount();
+		IntegerReductionCount count = new IntegerReductionCount();
 		String word = "9";
 		System.out.println("Result: "+count.solution(word));
 	}
