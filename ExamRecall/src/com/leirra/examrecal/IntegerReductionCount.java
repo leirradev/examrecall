@@ -6,7 +6,10 @@ public class IntegerReductionCount {
 		// TODO Auto-generated method stub
 		IntegerReductionCount count = new IntegerReductionCount();
 		String word = "9";
-		System.out.println("Result: "+count.solution(word));
+		System.out.println("If the number is odd, subtract 1 from it");
+		System.out.println("If the number is even, divide it by 2");
+		System.out.println("These actions are performed until the number becomes 0");
+		System.out.println("The number of steps when "+word+" becomes 0 is "+count.solution(word));
 	}
 	
 	public int solution(String S) {
